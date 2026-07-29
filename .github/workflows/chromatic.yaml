@@ -20,7 +20,7 @@ jobs:
       - name: Run Chromatic
         uses: chromaui/action@latest
         env:
-          CHROMATIC_INDEX_URL: https://index.chromatic-staging.com
+          CHROMATIC_INDEX_URL: https://index.staging-chromatic.com
         with:
           # ⚠️ Make sure to configure a `CHROMATIC_PROJECT_TOKEN` repository secret
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
